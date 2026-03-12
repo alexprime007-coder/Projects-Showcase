@@ -1,0 +1,459 @@
+{
+  "$schema": "design-system-v1",
+  "units": "All numeric values are in px unless suffixed (e.g., '0.01em'). lineHeight without units is a multiplier.",
+
+  "meta": {
+    "name": "Institut Sarah — Brutalist Technical",
+    "project": "institut-sarah-brutalist",
+    "client": "Institut Sarah",
+    "industry": "Beauty / Wellness",
+    "language": "fr",
+    "extractedFrom": "institut-sarah-dark/source/institut-sarah.pen",
+    "pencilNodeId": "K2CyC",
+    "pencilFrameName": "Direction D — Brutalist Technical",
+    "designSystemFrameId": "Hg3Ez",
+    "extractedAt": "2026-03-12",
+    "extractionMethod": "explicit-frame"
+  },
+
+  "principles": {
+    "mood": "Brutalist, technical, high-contrast, industrial",
+    "philosophy": "Zero decoration. Every element earns its place through function. Typography does the heavy lifting — no gradients, no shadows, no rounded corners. Contrast is the primary visual tool. Structure is defined by borders, not by whitespace.",
+    "doThis": [
+      "Use sharp, geometric forms with zero border-radius",
+      "Rely on bold typography contrast (Anton display vs Inter body)",
+      "Use thick 2px borders as the primary visual separator",
+      "Keep layouts flush, edge-to-edge — structure comes from borders, not gaps",
+      "Use uppercase with letter-spacing for ALL labels, navigation, badges, and buttons",
+      "Reserve the neon green accent for CTAs and key highlights only — one accent per screen",
+      "Use generous whitespace to let content breathe",
+      "Strong black/white contrast as the foundation of every screen",
+      "Internal padding of 24px as the standard for all containers",
+      "Cards can sit flush (0px gap) with shared borders for a grid effect"
+    ],
+    "avoidThis": [
+      "Rounded corners on any element (only exception: badges at 4px)",
+      "Drop shadows or box shadows of any kind",
+      "Gradients of any kind",
+      "More than one accent color at a time on screen",
+      "Decorative elements that don't serve a function",
+      "Lowercase text in navigation, labels, badges, or buttons",
+      "Small, timid typography — go bold or go home",
+      "Using spacing/gaps to create visual separation — use borders instead",
+      "Thin or subtle borders — always 2px for primary elements, 1.5px for secondary"
+    ]
+  },
+
+  "colors": {
+    "palette": {
+      "primary":    { "value": "#000000", "role": "Primary — text, borders, fills, structural elements" },
+      "background": { "value": "#FFFFFF", "role": "Page background, card fills, input fields" },
+      "accent":     { "value": "#00FF00", "role": "CTAs, key highlights, active states — use sparingly, max 1 per screen" },
+      "surface":    { "value": "#F5F5F5", "role": "Section backgrounds, design system canvas, subtle differentiation" },
+      "muted":      { "value": "#999999", "role": "Secondary text, captions, metadata, card numbers, placeholders" },
+      "body":       { "value": "#666666", "role": "Description text, body copy in cards, rules text" }
+    },
+    "usage": {
+      "text": {
+        "default": "#000000",
+        "onPrimary": "#FFFFFF",
+        "onAccent": "#000000",
+        "muted": "#999999",
+        "body": "#666666"
+      },
+      "border": {
+        "default": "#000000",
+        "width": 2
+      },
+      "hover": {
+        "primaryButton":  { "fill": "#FFFFFF", "text": "#000000", "border": "2px solid #000000" },
+        "accentButton":   { "fill": "#000000", "text": "#00FF00", "border": "none" },
+        "outlineButton":  { "fill": "#000000", "text": "#FFFFFF", "border": "2px solid #000000" },
+        "ghostButton":    { "fill": "transparent", "text": "#00FF00", "border": "none" },
+        "links":          { "textDecoration": "underline", "color": "#000000" }
+      },
+      "focus": {
+        "outline": "2px solid #000000",
+        "outlineOffset": 2
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "display": {
+        "family": "Anton",
+        "source": "Google Fonts",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');",
+        "usage": "Headlines, hero text, section titles, display numbers, card titles, design rule headings. Always uppercase."
+      },
+      "body": {
+        "family": "Inter",
+        "source": "Google Fonts",
+        "import": "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');",
+        "usage": "Body copy, labels, navigation, buttons, badges, captions, input labels, placeholders. All functional text."
+      }
+    },
+    "scale": {
+      "display":   { "fontFamily": "Anton", "fontSize": 96, "fontWeight": 400, "lineHeight": 1.0, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Hero headlines, major impact moments", "responsive": { "tablet": 64, "mobile": 48 } },
+      "headline":  { "fontFamily": "Anton", "fontSize": 48, "fontWeight": 400, "lineHeight": 1.1, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Section titles, page headers, design system title", "responsive": { "tablet": 36, "mobile": 28 } },
+      "title":     { "fontFamily": "Anton", "fontSize": 32, "fontWeight": 400, "lineHeight": 1.15, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Subsection headers, feature titles", "responsive": { "tablet": 28, "mobile": 24 } },
+      "cardTitle": { "fontFamily": "Anton", "fontSize": 28, "fontWeight": 400, "lineHeight": 1.15, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Card titles, component headings within cards" },
+      "subtitle":  { "fontFamily": "Anton", "fontSize": 24, "fontWeight": 400, "lineHeight": 1.2, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Supporting headlines, feature titles" },
+      "navBrand":  { "fontFamily": "Anton", "fontSize": 20, "fontWeight": 400, "lineHeight": 1.0, "letterSpacing": "0.01em", "textTransform": "uppercase", "use": "Navbar brand name, rule section titles" },
+      "body":      { "fontFamily": "Inter", "fontSize": 16, "fontWeight": 400, "lineHeight": 1.5, "use": "Paragraphs, descriptions, long-form content" },
+      "bodySmall": { "fontFamily": "Inter", "fontSize": 14, "fontWeight": 400, "lineHeight": 1.5, "use": "Input placeholder text, secondary body copy" },
+      "bodyDesc":  { "fontFamily": "Inter", "fontSize": 13, "fontWeight": 400, "lineHeight": 1.6, "color": "#666666", "use": "Card descriptions, rules descriptions, supporting text" },
+      "bodyBold":  { "fontFamily": "Inter", "fontSize": 16, "fontWeight": 700, "lineHeight": 1.5, "use": "Emphasized body text, strong callouts" },
+      "label":     { "fontFamily": "Inter", "fontSize": 12, "fontWeight": 700, "lineHeight": 1.0, "letterSpacing": "0.15em", "textTransform": "uppercase", "use": "Buttons, section labels, metadata" },
+      "navLink":   { "fontFamily": "Inter", "fontSize": 11, "fontWeight": 700, "lineHeight": 1.0, "letterSpacing": "0.15em", "textTransform": "uppercase", "use": "Navigation links, card prices, card numbers" },
+      "badge":     { "fontFamily": "Inter", "fontSize": 10, "fontWeight": 700, "lineHeight": 1.0, "letterSpacing": "0.15em", "textTransform": "uppercase", "use": "Badges, tags, input labels" },
+      "caption":   { "fontFamily": "Inter", "fontSize": 11, "fontWeight": 400, "lineHeight": 1.4, "use": "Timestamps, footnotes, helper text" }
+    }
+  },
+
+  "spacing": {
+    "base": 8,
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48,
+      "3xl": 64,
+      "4xl": 96
+    },
+    "patterns": {
+      "sectionPadding": 48,
+      "sectionGap": 32,
+      "groupGap": 24,
+      "elementGap": 16,
+      "internalGap": 20,
+      "labelToFieldGap": 8,
+      "flushCardGap": 0,
+      "pageGutter": 24
+    },
+    "note": "Component-specific spacing (card padding, button paddingX, etc.) lives in the components section. Flush (0px gap) card layouts are a signature pattern — cards share borders edge-to-edge."
+  },
+
+  "borders": {
+    "default": { "width": 2, "style": "solid", "color": "#000000" },
+    "light": { "width": 1.5, "style": "solid", "color": "#000000" },
+    "defaultRadius": 0,
+    "note": "2px black borders for sections, cards, inputs, and navbar. 1.5px for badges and secondary elements. Zero border-radius everywhere except badges (4px). Structure is defined by borders, not by whitespace."
+  },
+
+  "effects": {
+    "shadows": "none — this design system does not use shadows",
+    "gradients": "none — this design system does not use gradients",
+    "transitions": {
+      "default": "150ms ease",
+      "use": "Hover states, focus states, active states"
+    }
+  },
+
+  "icons": {
+    "library": "Lucide",
+    "cdn": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+    "defaultSize": 20,
+    "strokeWidth": 2,
+    "style": "Outlined, geometric — matches the brutalist aesthetic. Use sparingly — let typography lead."
+  },
+
+  "images": {
+    "treatment": "High contrast, desaturated or b&w preferred. No rounded corners on images. Use object-fit: cover. Prefer editorial/documentary style over stock photography.",
+    "optimization": {
+      "format": "webp",
+      "heroWidth": 1080,
+      "cardWidth": 600,
+      "heroQuality": 80,
+      "cardQuality": 75
+    }
+  },
+
+  "layout": {
+    "maxWidth": 1200,
+    "centered": true,
+    "grid": {
+      "columns": 12,
+      "gutter": 24,
+      "note": "Use CSS Grid or Flexbox. Prefer 2-column and 3-column layouts. Full-bleed sections for hero and CTA. Cards can sit flush (0px gap) sharing borders."
+    },
+    "breakpoints": {
+      "desktop": { "minWidth": 1025, "note": "Full multi-column layouts" },
+      "tablet":  { "minWidth": 769, "maxWidth": 1024, "note": "2-column layouts, reduce font sizes per responsive scale" },
+      "mobile":  { "maxWidth": 768, "note": "Single column, stacked layouts, full-width cards" }
+    },
+    "patterns": {
+      "hero": "Two-column: content left, image right. Full-width background. Image has no border-radius. Bold uppercase headline in Anton.",
+      "services": "3-column grid of cards with consistent height. Flush layout (0px gap, shared borders). Each card: number, title, description, price badge.",
+      "testimonial": "Two-column: quote content left/right, image opposite side. Large blockquote in Anton uppercase.",
+      "cta": "Centered text block with heading, subtext, and primary button. Can have accent background.",
+      "footer": "4-column: brand + 3 link columns. Bordered top. Copyright bar at bottom. All text uppercase.",
+      "navbar": "Logo left (Anton brand name), links center/right (Inter uppercase), CTA button right. Fixed height 64px. Bottom border 2px.",
+      "form": "Stacked inputs with uppercase labels above each field. Submit button full-width or right-aligned."
+    }
+  },
+
+  "components": {
+    "button": {
+      "shared": {
+        "height": 52,
+        "paddingX": 32,
+        "typography": "label",
+        "cornerRadius": 0,
+        "cursor": "pointer",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.15em"
+      },
+      "variants": {
+        "primary":  { "fill": "#000000", "text": "#FFFFFF", "border": "none" },
+        "accent":   { "fill": "#00FF00", "text": "#000000", "border": "none" },
+        "outline":  { "fill": "#FFFFFF", "text": "#000000", "border": "2px solid #000000" },
+        "ghost":    { "fill": "transparent", "text": "#000000", "border": "none" }
+      }
+    },
+    "badge": {
+      "shared": {
+        "height": 28,
+        "paddingX": 12,
+        "cornerRadius": 4,
+        "typography": "badge",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.15em"
+      },
+      "variants": {
+        "outline": { "fill": "transparent", "text": "#000000", "border": "1.5px solid #000000" },
+        "filled":  { "fill": "#000000", "text": "#FFFFFF", "border": "none" },
+        "accent":  { "fill": "#00FF00", "text": "#000000", "border": "none" },
+        "number":  { "fill": "transparent", "text": "#000000", "border": "1.5px solid #000000" }
+      }
+    },
+    "navbar": {
+      "height": 64,
+      "fill": "#FFFFFF",
+      "border": "2px solid #000000",
+      "paddingX": 24,
+      "layout": "space-between",
+      "brand": {
+        "fontFamily": "Anton",
+        "fontSize": 20,
+        "letterSpacing": "0.01em",
+        "textTransform": "uppercase",
+        "color": "#000000"
+      },
+      "links": {
+        "fontFamily": "Inter",
+        "fontSize": 11,
+        "fontWeight": 700,
+        "letterSpacing": "0.15em",
+        "textTransform": "uppercase",
+        "gap": 32,
+        "color": "#000000"
+      },
+      "cta": "Button/Primary variant"
+    },
+    "card": {
+      "service": {
+        "fill": "#FFFFFF",
+        "border": "2px solid #000000",
+        "cornerRadius": 0,
+        "padding": 24,
+        "minHeight": 280,
+        "layout": "vertical, space-between",
+        "structure": {
+          "top": {
+            "gap": 16,
+            "number": { "typography": "navLink", "color": "#999999" },
+            "title": { "fontFamily": "Anton", "fontSize": 28, "color": "#000000", "textTransform": "uppercase" },
+            "description": { "fontFamily": "Inter", "fontSize": 13, "lineHeight": 1.5, "color": "#666666" }
+          },
+          "bottom": {
+            "layout": "space-between",
+            "badge": "Badge/Outline variant",
+            "price": { "typography": "navLink", "color": "#000000" }
+          }
+        }
+      }
+    },
+    "input": {
+      "label": {
+        "fontFamily": "Inter",
+        "fontSize": 10,
+        "fontWeight": 700,
+        "letterSpacing": "0.15em",
+        "textTransform": "uppercase",
+        "color": "#000000"
+      },
+      "field": {
+        "height": 48,
+        "fill": "#FFFFFF",
+        "border": "2px solid #000000",
+        "cornerRadius": 0,
+        "paddingX": 16,
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "color": "#000000",
+        "placeholder": { "color": "#999999" }
+      },
+      "labelToFieldGap": 8,
+      "fieldToFieldGap": 24
+    },
+    "divider": {
+      "height": 2,
+      "color": "#000000",
+      "fullWidth": true,
+      "note": "Used between major sections. The thick line is a signature element of this design system."
+    }
+  },
+
+  "socialMedia": {
+    "note": "Reusable social media templates following the brutalist design system. All templates use the same color system (black bg, neon green accent, white text) and typography (Anton headlines, Inter labels). Dimensions listed are production export sizes.",
+    "dimensions": {
+      "instagram":  { "post": [1080, 1080], "story": [1080, 1920], "reel": [1080, 1920] },
+      "x":          { "post": [1200, 675] },
+      "facebook":   { "post": [1200, 630], "cover": [820, 312] },
+      "youtube":    { "thumbnail": [1280, 720] },
+      "tiktok":     { "cover": [1080, 1920] },
+      "linkedin":   { "post": [1200, 627] }
+    },
+    "templates": {
+      "instagram/post": {
+        "width": 1080,
+        "height": 1080,
+        "fill": "#000000",
+        "structure": {
+          "topBar": {
+            "height": 28,
+            "paddingX": 16,
+            "layout": "space-between",
+            "brand": { "fontFamily": "Anton", "fontSize": 10, "color": "#FFFFFF", "letterSpacing": "0.01em", "textTransform": "uppercase" },
+            "badge": { "fontFamily": "Inter", "fontSize": 7, "fontWeight": 700, "color": "#00FF00", "letterSpacing": "0.01em" }
+          },
+          "hero": {
+            "fill": "#00FF00",
+            "padding": [0, 16, 12, 16],
+            "justifyContent": "end",
+            "headline": { "fontFamily": "Anton", "fontSize": 48, "color": "#000000", "lineHeight": 0.9 },
+            "subtitle": { "fontFamily": "Inter", "fontSize": 9, "color": "#000000" }
+          },
+          "bottomBar": {
+            "height": 28,
+            "paddingX": 16,
+            "layout": "space-between",
+            "cta": { "fontFamily": "Inter", "fontSize": 7, "fontWeight": 700, "color": "#FFFFFF", "letterSpacing": "0.01em" },
+            "handle": { "fontFamily": "Inter", "fontSize": 7, "color": "#666666", "letterSpacing": "0.01em" }
+          }
+        }
+      },
+      "instagram/story": {
+        "width": 1080,
+        "height": 1920,
+        "fill": "#000000",
+        "structure": {
+          "topBar": { "height": 24, "paddingX": 12, "brand": "#FFFFFF", "badge": "#00FF00" },
+          "image": { "height": "~40%", "objectFit": "cover" },
+          "content": { "fill": "#00FF00", "padding": 12, "headline": { "fontFamily": "Anton", "color": "#000000" }, "subtitle": { "fontFamily": "Inter", "color": "#000000" } },
+          "footer": { "height": 20, "handle": { "fontFamily": "Inter", "fontSize": 5, "fontWeight": 700, "color": "#666666" } }
+        }
+      },
+      "x/post": {
+        "width": 1200,
+        "height": 675,
+        "fill": "#000000",
+        "structure": {
+          "layout": "two-column",
+          "left": { "fill": "#00FF00", "padding": 16, "justifyContent": "end", "headline": { "fontFamily": "Anton", "fontSize": 36, "color": "#000000", "lineHeight": 0.9 }, "subtitle": { "fontFamily": "Inter", "fontSize": 9, "color": "#000000" } },
+          "right": { "fill": "#000000", "padding": 16, "width": 160, "justifyContent": "space-between", "brand": { "fontFamily": "Anton", "fontSize": 14, "color": "#FFFFFF", "lineHeight": 0.9, "textAlign": "right" }, "cta": { "fontFamily": "Inter", "fontSize": 8, "fontWeight": 700, "color": "#00FF00" } }
+        }
+      },
+      "facebook/post": {
+        "width": 1200,
+        "height": 630,
+        "fill": "#000000",
+        "structure": {
+          "layout": "two-column",
+          "left": { "fill": "#00FF00", "padding": 16, "justifyContent": "end", "tag": { "fontFamily": "Inter", "fontSize": 7, "fontWeight": 700, "letterSpacing": "0.15em", "color": "#000000" }, "headline": { "fontFamily": "Anton", "fontSize": 32, "color": "#000000", "lineHeight": 0.9 }, "subtitle": { "fontFamily": "Inter", "fontSize": 8, "color": "#000000" } },
+          "right": { "fill": "#000000", "padding": 16, "width": 160, "brand": { "fontFamily": "Anton", "fontSize": 14, "color": "#FFFFFF" } }
+        }
+      },
+      "facebook/cover": {
+        "width": 820,
+        "height": 312,
+        "fill": "#00FF00",
+        "structure": {
+          "layout": "space-between",
+          "paddingX": 20,
+          "left": { "brand": { "fontFamily": "Anton", "fontSize": 36, "color": "#000000", "lineHeight": 0.9 }, "subtitle": { "fontFamily": "Inter", "fontSize": 9, "color": "#000000" } },
+          "right": { "tag": { "fill": "#000000", "text": "#FFFFFF", "height": 20, "paddingX": 10 }, "hours": { "fontFamily": "Anton", "fontSize": 16, "color": "#000000", "lineHeight": 1.1, "textAlign": "right" } }
+        }
+      },
+      "youtube/thumbnail": {
+        "width": 1280,
+        "height": 720,
+        "fill": "#000000",
+        "structure": {
+          "layout": "two-column",
+          "left": { "fill": "#00FF00", "padding": 16, "justifyContent": "end", "tag": { "fontFamily": "Inter", "fontSize": 7, "fontWeight": 700, "letterSpacing": "0.15em", "color": "#000000" }, "headline": { "fontFamily": "Anton", "fontSize": 40, "color": "#000000", "lineHeight": 0.9 }, "subtitle": { "fontFamily": "Inter", "fontSize": 9, "color": "#000000" } },
+          "right": { "fill": "#000000", "padding": 16, "width": 170, "justifyContent": "space-between", "brand": { "fontFamily": "Anton", "fontSize": 16, "color": "#FFFFFF", "textAlign": "center" }, "playIcon": { "size": 48, "color": "#00FF00" }, "handle": { "fontFamily": "Inter", "fontSize": 6, "fontWeight": 700, "color": "#666666" } }
+        }
+      },
+      "tiktok/cover": {
+        "width": 1080,
+        "height": 1920,
+        "fill": "#000000",
+        "structure": {
+          "note": "Same structure as Instagram Story — top brand bar, image section, neon green content section, footer",
+          "topBar": { "height": 24, "paddingX": 12, "brand": "#FFFFFF", "badge": "#00FF00" },
+          "image": { "height": "~40%", "objectFit": "cover" },
+          "content": { "fill": "#00FF00", "padding": 12 },
+          "footer": { "height": 20, "text": "#666666" }
+        }
+      },
+      "linkedin/post": {
+        "width": 1200,
+        "height": 627,
+        "fill": "#000000",
+        "structure": {
+          "layout": "two-column",
+          "left": { "fill": "#000000", "padding": 16, "justifyContent": "space-between" },
+          "right": { "fill": "#00FF00", "padding": 16, "width": 160, "justifyContent": "end", "headline": { "fontFamily": "Anton", "fontSize": 24, "color": "#000000", "lineHeight": 0.9 }, "subtitle": { "fontFamily": "Inter", "fontSize": 8, "color": "#000000" } }
+        }
+      }
+    },
+    "designPatterns": [
+      "All social templates use a black background as the base",
+      "Neon green (#00FF00) is used as the hero/accent panel — never as a full background except Facebook Cover",
+      "Brand name always in Anton uppercase, handle (@INSTITUTSARAH) in Inter uppercase with letter-spacing",
+      "Two-column split layout is the default for landscape formats (X, Facebook Post, YouTube, LinkedIn)",
+      "Vertical stacked layout for portrait formats (Instagram Story, TikTok Cover)",
+      "Headlines use tight lineHeight (0.9) for impact — often multiline with line breaks",
+      "CTA text always includes arrow → symbol",
+      "Font sizes in templates are relative to the Pencil canvas scale — multiply by ~3x for production export dimensions"
+    ]
+  },
+
+  "extrapolation": {
+    "note": "When building components not explicitly defined above, follow these rules to stay consistent with the design system:",
+    "rules": [
+      "Borders over shadows — always use 2px solid black borders to define containers",
+      "Zero border-radius everywhere except badges (4px)",
+      "Typography hierarchy: Anton for anything that needs to grab attention, Inter for everything else",
+      "All navigation, labels, metadata, and button text is uppercase with letter-spacing (0.15em for Inter, 0.01em for Anton)",
+      "Heights align to the system: 28px (badges), 48px (inputs), 52px (buttons), 64px (navbar)",
+      "Padding follows the spacing scale: 12px (tight/badges), 16px (inputs), 24px (standard/cards), 32px (comfortable/buttons), 48px (spacious/sections)",
+      "Color usage: black/white for structure, #666666 for descriptions, #999999 for metadata, accent green ONLY for the most important interactive element on the screen",
+      "When in doubt, remove — this system favors absence over decoration",
+      "Hover states: invert colors (black becomes white bg with black border, or vice versa)",
+      "Structure by borders, not by gaps — cards can sit flush (0px gap) sharing borders for a grid effect",
+      "Labels above inputs, not inside — follow the input component pattern",
+      "New components should feel like they were designed at the same time as the existing ones",
+      "For tables: use 2px black borders, uppercase headers in Inter bold, alternate no bg (white rows only), no zebra striping",
+      "For modals/dialogs: white bg, 2px black border, no border-radius, no shadow, close button as ghost style",
+      "For tooltips: black bg, white text, no border-radius, Inter caption size",
+      "For tabs: uppercase Inter labels, 2px bottom border on active tab (black or accent), no bg change",
+      "For toggles/switches: use the accent green for active state, 2px black border outline"
+    ]
+  }
+}
