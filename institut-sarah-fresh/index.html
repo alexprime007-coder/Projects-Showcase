@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/institut-sarah-fresh/">
+  <title>Institut Sarah — Institut de Beauté à Torcy</title>
+  <meta name="description" content="Institut Sarah, votre institut de beauté à Torcy. Soins du visage, soins du corps et beauté des ongles. 18 Rue de la République, 77200 Torcy.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       1. NAV
+       ════════════════════════════════════════ -->
+  <nav class="nav">
+    <div class="page-wrapper">
+      <div class="nav__inner">
+        <a href="#" class="nav__brand">
+          <div class="nav__logo-square">IS</div>
+          <span class="nav__brand-name">Institut Sarah</span>
+        </a>
+
+        <div class="nav__links">
+          <a href="#" class="nav__link">Accueil</a>
+          <a href="#soins" class="nav__link">Soins</a>
+          <a href="#tarifs" class="nav__link">Tarifs</a>
+          <a href="#contact" class="nav__link">Contact</a>
+          <a href="#reserver" class="btn btn-primary nav__cta">Réserver</a>
+        </div>
+
+        <button class="nav__toggle" aria-label="Ouvrir le menu">
+          <i data-lucide="menu" style="width:24px;height:24px;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       2. HERO
+       ════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="page-wrapper">
+      <div class="hero__badge">
+        <i data-lucide="heart"></i>
+        Votre beauté, notre passion
+      </div>
+
+      <h1 class="hero__title">L'art de prendre soin de soi</h1>
+
+      <p class="hero__subtitle">
+        Découvrez un espace dédié à votre bien-être au cœur de Torcy.
+        Des soins personnalisés pour révéler votre beauté naturelle.
+      </p>
+
+      <div class="hero__buttons">
+        <a href="#reserver" class="btn btn-primary">Réserver maintenant</a>
+        <a href="#soins" class="btn btn-light">Découvrir nos soins</a>
+      </div>
+
+      <div class="hero__image">
+        <img
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80"
+          alt="Intérieur élégant de l'Institut Sarah, institut de beauté à Torcy"
+          loading="eager"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       3. SERVICES
+       ════════════════════════════════════════ -->
+  <section class="services" id="soins">
+    <div class="page-wrapper">
+      <div class="services__header">
+        <p class="section-label">Nos soins</p>
+        <h2 class="section-title">Une expertise complète au service de votre beauté</h2>
+      </div>
+
+      <div class="services__grid">
+        <!-- Card 1 — Soins du visage -->
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="service-card__title">Soins du visage</h3>
+          <p class="service-card__desc">
+            Des soins sur-mesure pour sublimer votre peau. Nettoyage, hydratation
+            et traitements ciblés pour un teint éclatant.
+          </p>
+        </div>
+
+        <!-- Card 2 — Soins du corps -->
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i data-lucide="hand"></i>
+          </div>
+          <h3 class="service-card__title">Soins du corps</h3>
+          <p class="service-card__desc">
+            Massages relaxants, gommages et enveloppements pour une détente
+            absolue et une peau douce et revitalisée.
+          </p>
+        </div>
+
+        <!-- Card 3 — Beauté des ongles -->
+        <div class="service-card">
+          <div class="service-card__icon">
+            <i data-lucide="flower-2"></i>
+          </div>
+          <h3 class="service-card__title">Beauté des ongles</h3>
+          <p class="service-card__desc">
+            Manucure, pédicure et pose de vernis semi-permanent.
+            Des ongles impeccables pour compléter votre beauté.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       4. TESTIMONIAL
+       ════════════════════════════════════════ -->
+  <section class="testimonial">
+    <div class="page-wrapper">
+      <div class="testimonial__stars">
+        <i data-lucide="star"></i>
+        <i data-lucide="star"></i>
+        <i data-lucide="star"></i>
+        <i data-lucide="star"></i>
+        <i data-lucide="star"></i>
+      </div>
+
+      <blockquote class="testimonial__quote">
+        &laquo;&nbsp;Un véritable havre de paix. L'équipe est à l'écoute et les soins sont
+        d'une qualité exceptionnelle. Je repars à chaque fois ressourcée et ravie.&nbsp;&raquo;
+      </blockquote>
+
+      <p class="testimonial__author">Sophie L.</p>
+      <p class="testimonial__role">Cliente régulière</p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       5. CTA BANNER
+       ════════════════════════════════════════ -->
+  <section id="reserver">
+    <div class="page-wrapper">
+      <div class="cta-banner">
+        <h2 class="cta-banner__title">Offrez-vous un moment de beauté</h2>
+        <p class="cta-banner__address">18 Rue de la République, 77200 Torcy</p>
+        <a href="#contact" class="btn btn-white">Réserver maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       6. FOOTER
+       ════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="page-wrapper">
+      <div class="footer__top">
+        <!-- Brand column -->
+        <div class="footer__col">
+          <p class="footer__brand-name">Institut Sarah</p>
+          <p class="footer__tagline">
+            Votre institut de beauté à Torcy. Des soins personnalisés dans un cadre
+            chaleureux et moderne.
+          </p>
+        </div>
+
+        <!-- Soins column -->
+        <div class="footer__col">
+          <p class="footer__col-title">Soins</p>
+          <ul>
+            <li><a href="#">Soins du visage</a></li>
+            <li><a href="#">Soins du corps</a></li>
+            <li><a href="#">Beauté des ongles</a></li>
+            <li><a href="#">Épilation</a></li>
+          </ul>
+        </div>
+
+        <!-- Institut column -->
+        <div class="footer__col">
+          <p class="footer__col-title">Institut</p>
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Avis clients</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact column -->
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <ul>
+            <li><a href="#">18 Rue de la République</a></li>
+            <li><a href="#">77200 Torcy, France</a></li>
+            <li><a href="tel:+33100000000">01 00 00 00 00</a></li>
+            <li><a href="mailto:contact@institutsarah.fr">contact@institutsarah.fr</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Institut Sarah. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav__toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        nav.classList.toggle('nav--open');
+      });
+    }
+  </script>
+
+</body>
+</html>
